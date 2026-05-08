@@ -366,75 +366,110 @@ nav.scrolled{background:rgba(14,12,10,.85);backdrop-filter:blur(12px)}
 /* ══════════════════════════════
    MOBILE RESPONSIVE
 ══════════════════════════════ */
+/* ── TABLET ── */
+@media(max-width:768px){
+  .container{padding:0 1.4rem}
+  .hero-ornament{width:380px;height:380px}
+  .hero-title{font-size:2.6rem}
+  .pillars{grid-template-columns:1fr;gap:1.4rem}
+  .plan-cards{grid-template-columns:1fr;gap:1.4rem}
+  .plan-card.featured{transform:none}
+  .profile-inner{grid-template-columns:1fr;gap:2.5rem}
+  .profile-photo{max-width:300px;margin:0 auto}
+  .voice-grid{grid-template-columns:1fr;gap:1.4rem}
+  .pattern-grid{grid-template-columns:1fr;gap:1.2rem}
+}
+
+/* ── MOBILE ── */
 @media(max-width:480px){
   /* 全体 */
-  .container{padding:0 1.2rem}
+  *{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  .container{padding:0 1.1rem}
+
+  /* NAV */
+  nav{padding:.9rem 1.2rem}
 
   /* Hero */
-  .hero-content{padding:1.2rem}
-  .hero-ornament{width:300px;height:300px}
-  .hero-title{font-size:2rem;letter-spacing:.03em}
-  .hero-subtitle{font-size:1rem;margin-bottom:1.8rem}
-  .hero-tagline{font-size:.82rem;letter-spacing:.1em;margin-bottom:2rem}
-  .hero-cta{padding:.8rem 2rem;font-size:.82rem;letter-spacing:.15em}
+  .hero{min-height:100dvh}
+  .hero-content{padding:1rem .8rem;width:100%;max-width:100%}
+  .hero-ornament{width:260px;height:260px}
+  .hero-title{font-size:1.9rem;letter-spacing:.02em;line-height:1.2}
+  .hero-subtitle{font-size:.9rem;margin-bottom:1.5rem;letter-spacing:.06em}
+  .hero-tagline{font-size:.78rem;letter-spacing:.08em;margin-bottom:1.8rem}
+  .hero-cta{padding:.75rem 1.8rem;font-size:.8rem;letter-spacing:.12em}
 
   /* Intro */
-  .intro{padding:4rem 0 3rem}
-  .intro-quote{font-size:1rem;padding-left:1.2rem;line-height:1.8}
-  .intro-body{font-size:.88rem;line-height:2}
+  .intro{padding:3.5rem 0 2.5rem}
+  .intro-quote{font-size:.95rem;padding-left:1rem;line-height:1.8;margin-bottom:2rem}
+  .intro-body{font-size:.85rem;line-height:2}
 
   /* Pattern */
-  .pattern{padding:3rem 0}
-  .pattern-grid{grid-template-columns:1fr;gap:1rem;margin-top:2rem}
-  .pattern-item{padding:1.4rem 1.4rem 1.4rem 1rem}
+  .pattern{padding:2.5rem 0}
+  .pattern-grid{grid-template-columns:1fr;gap:.9rem;margin-top:1.8rem}
+  .pattern-item{padding:1.2rem 1.2rem 1.2rem .9rem;gap:.8rem}
+  .pattern-num{font-size:1.2rem}
+  .pattern-text{font-size:.85rem}
 
   /* Method */
-  .method{padding:4rem 0}
-  .method-intro{margin-bottom:3rem}
-  .pillars{grid-template-columns:1fr;gap:1.2rem}
-  .pillar{padding:1.6rem}
+  .method{padding:3.5rem 0}
+  .method-intro{margin-bottom:2.5rem}
+  .pillars{grid-template-columns:1fr;gap:1rem}
+  .pillar{padding:1.4rem}
+  .pillar-body{font-size:.84rem}
 
   /* Flow */
-  .flow{padding:4rem 0}
-  .step{gap:1.2rem;padding-bottom:2rem}
-  .step-body{font-size:.83rem}
+  .flow{padding:3.5rem 0}
+  .step{gap:1rem;padding-bottom:1.8rem}
+  .step-circle{width:34px;height:34px;font-size:.8rem}
+  .step-body{font-size:.82rem}
+  .step-title{font-size:1rem}
 
   /* Voice */
-  .voice{padding:4rem 0}
-  .voice-grid{grid-template-columns:1fr;gap:1.2rem}
-  .voice-card{padding:1.8rem 1.6rem}
+  .voice{padding:3.5rem 0}
+  .voice-grid{grid-template-columns:1fr;gap:1rem}
+  .voice-card{padding:1.6rem 1.4rem}
+  .voice-text{font-size:.85rem}
 
   /* Profile */
-  .profile{padding:4rem 0}
+  .profile{padding:3.5rem 0}
   .profile-inner{grid-template-columns:1fr;gap:2rem}
   .profile-photo{
-    max-width:260px;
+    width:min(240px,75vw);
     margin:0 auto;
     aspect-ratio:3/4;
   }
-  .profile-body{font-size:.85rem}
-  .profile-title{font-size:.88rem;letter-spacing:.06em}
+  .profile-name{font-size:1.5rem}
+  .profile-body{font-size:.83rem}
+  .profile-title{font-size:.85rem;letter-spacing:.04em}
+  .profile-tags{gap:.4rem}
+  .profile-tag{font-size:.7rem;padding:.25rem .6rem}
 
   /* Plan */
-  .plan{padding:4rem 0}
-  .plan-cards{grid-template-columns:1fr;gap:1.2rem}
-  .plan-card{padding:2rem 1.6rem}
+  .plan{padding:3.5rem 0}
+  .plan-cards{grid-template-columns:1fr;gap:1rem}
+  .plan-card{padding:1.8rem 1.4rem}
   .plan-card.featured{transform:none}
-  .plan-price{font-size:1.6rem}
+  .plan-name{font-size:1.05rem}
+  .plan-price{font-size:1.5rem}
+  .plan-list li{font-size:.8rem}
+  .plan-btn{font-size:.78rem;letter-spacing:.1em}
 
   /* FAQ */
-  .faq{padding:4rem 0}
-  .faq-q-text{font-size:.88rem}
-  .faq-a-inner{font-size:.83rem}
+  .faq{padding:3.5rem 0}
+  .faq-q{padding:1.2rem .8rem 1.2rem 0}
+  .faq-q-text{font-size:.85rem}
+  .faq-a-inner{font-size:.82rem}
 
   /* CTA Final */
-  .cta-final{padding:5rem 1.4rem}
-  .cta-title{font-size:1.3rem;line-height:1.6}
-  .cta-btn{padding:.9rem 2rem;font-size:.82rem;letter-spacing:.12em}
+  .cta-final{padding:4rem 1.2rem}
+  .cta-title{font-size:1.2rem;line-height:1.6}
+  .cta-sub{font-size:.84rem}
+  .cta-btn{padding:.85rem 1.8rem;font-size:.8rem;letter-spacing:.1em}
 
   /* Section headings */
-  .sec-title{font-size:1.4rem}
-  .section-divider{height:40px}
+  .sec-title{font-size:1.35rem}
+  .sec-label{font-size:.68rem;letter-spacing:.2em}
+  .section-divider{height:32px}
 }
 </style>
 </head>
